@@ -1,6 +1,6 @@
 Citizen.CreateThread(function()
     while true do
-        Wait(0)
+        Wait(1500)
         SetPedDensityMultiplierThisFrame(wx.NPCFrequency)
         SetScenarioPedDensityMultiplierThisFrame(wx.NPCFrequency, wx.NPCFrequency)
         SetRandomVehicleDensityMultiplierThisFrame(wx.TrafficFrequency)

@@ -40,6 +40,7 @@ if wx.NoPoliceVehicles then
             "DUSTER",
         }
         while true do
+            Wait(1000)
             for _,sctyp in next,SCENARIO_TYPES do
                 SetScenarioTypeEnabled(sctyp,false)
             end

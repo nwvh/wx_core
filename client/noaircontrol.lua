@@ -25,7 +25,7 @@ if wx.NoAirControl then
     Citizen.CreateThread(function()
         while true do
             Wait(0)
-            local player = GetPlayerPed(-1)
+            local player = PlayerPedId()
             local vehicle = GetVehiclePedIsIn(player, false)
             local vehicleClass = GetVehicleClass(vehicle)
             if ((GetPedInVehicleSeat(vehicle, -1) == player) and vehicleClassDisableControl[vehicleClass]) then

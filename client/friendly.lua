@@ -32,14 +32,8 @@ local relationshipTypes = {
 }
 
 if wx.FriendlyNPCs then
-    Citizen.CreateThread(function()
-        while true do
-            Citizen.Wait(1500)
-
-            for _, group in ipairs(relationshipTypes) do
-                SetRelationshipBetweenGroups(1, GetHashKey('PLAYER'), GetHashKey(group))
-                SetRelationshipBetweenGroups(1, GetHashKey(group), GetHashKey('PLAYER'))
-            end
-        end
-    end)
+    for _, group in ipairs(relationshipTypes) do
+        SetRelationshipBetweenGroups(1, GetHashKey('PLAYER'), GetHashKey(group))
+        SetRelationshipBetweenGroups(1, GetHashKey(group), GetHashKey('PLAYER'))
+    end
 end

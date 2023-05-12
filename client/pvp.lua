@@ -1,8 +1,8 @@
 if wx.enablePVP then
     Citizen.CreateThread(function()
         while true do
-            Wait(0)
-            SetCanAttackFriendly(GetPlayerPed(-1), true, false)
+            Wait(1000)
+            SetCanAttackFriendly(PlayerPedId(), true, false)
             NetworkSetFriendlyFireOption(true)
         end
     end)
