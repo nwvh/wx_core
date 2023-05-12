@@ -1,0 +1,8 @@
+fx_version 'cerulean'
+game 'gta5'
+description 'Essential FiveM (roleplay) server script pack'
+author 'woox <wx#5352>'
+version '1.0.0'
+lua54 'yes'
+client_script 'client/*'
+shared_script 'configs/core_config.lua'
